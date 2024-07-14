@@ -27,7 +27,7 @@ list_of_files = [
     "app.py",
     "Dockerfile",
     "requirements.txt",
-    "setup",
+    "setup.py",
     "research/trials.ipynb",
     "templates/index.html"
 ]
@@ -40,7 +40,7 @@ for filepath in list_of_files:
 
     print(f"Processing: {filepath}")
 
-    
+
     if filedir !="":
         os.makedirs(filedir, exist_ok=True)
         logging.info(f"Creating directory: {filedir} for the file: {filename}")
